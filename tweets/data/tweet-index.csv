@@ -1,0 +1,5 @@
+﻿filename,description,tweet url,thread,date of tweet,date added,reproducibility,scripting,data viz,data science
+jennybryan_save-changes-raw-data-xlsx.png,Tweet highlighting the bad practice of saving changes to raw data in Excel,https://twitter.com/JennyBryan/status/971490104723329025,FALSE,07/03/2018,12/03/2018,TRUE,,,
+jonathon-carroll_poll_where-do-I-read-to-acquant-myself-with-a-new-package.png,Poll asking where folks first look when becoming acquinted with a new package,https://twitter.com/carroll_jono/status/969442252610191361,TRUE,02/03/2018,12/03/2018,,TRUE,,
+hadleywickham_indexing-and-pepper-shakers.png,Hadley's tweet about indexing and pepper shakers,https://twitter.com/hadleywickham/status/643381054758363136,FALSE,14/09/2015,12/03/2018,TRUE,TRUE,,
+,q,,,,,,,,
