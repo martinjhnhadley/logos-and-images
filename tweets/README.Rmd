@@ -1,5 +1,6 @@
 ---
-output: github_document
+output:
+  html_document
 editor_options: 
   chunk_output_type: console
 ---
@@ -12,9 +13,6 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
 
 # Tweets
 
@@ -57,12 +55,11 @@ tidy_tweets %>%
   group_by(filename, description, date.of.tweet, tweet.url) %>%
   summarise(icons = paste(icon, collapse = "<br>")) %>%
   ungroup() %>%
-  mutate(tweet = paste0("<a href='", tweet.url, "' target='_blank'>", "<img src='", filename, "' style='min-width:400px'></img>", "</a>")) %>%
-  select(tweet, description, date.of.tweet, icons) %>%
+  mutate(tweet = paste0("<a href='", tweet.url, "' target='_blank'>", "<img src='", filename, "' style='max-width:400px'></img>", "</a>")) %>%
+  select(tweet, description, date.of.tweet) %>%
   arrange(desc(date.of.tweet)) %>%
   kable(align = "c",
-        col.names = c("Tweet", "Tweet description", "Date of tweet",
-                      "Subject of tweet?"))
+        col.names = c("Tweet", "Tweet description", "Date of tweet"))
 ```
 
 
